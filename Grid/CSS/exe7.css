@@ -1,0 +1,121 @@
+.one
+{
+	grid-area: oo;
+}
+.two
+{
+	grid-area: tt;
+}
+.three
+{
+	grid-area: ttt;
+}
+.four
+{
+	grid-area: ff;
+}
+.five
+{
+	grid-area: fff;
+}
+.six
+{
+	grid-area: ss;
+}
+.seven
+{
+	grid-area: sss;
+}
+.eight
+{
+	grid-area: ee;
+}
+.nine
+{
+	grid-area: nn;
+}
+.ten
+{
+	grid-area: ttn;
+}
+
+.eleven
+{
+	grid-area: eel;
+}
+
+
+	.twelve
+	{
+		grid-area: ttw;
+	}
+	.therteen
+	{
+		grid-area: ttr;
+	}
+	.fourteen
+	{
+		grid-area: fft;
+
+	}
+	.fifteen 
+	{
+		grid-area: fftt;
+	}
+	
+	.sixteen
+		{
+			grid-area: sst;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.seventeen{grid-area: sv1;}
+	.eightteen{grid-area: et1;}
+	.ninteen{grid-area: nt1;}
+	.twenteen{grid-area: tw1;}
+	.twentione{grid-area: twe1;}
+	.twentytwo{grid-area: tt1;}
+
+
+
+
+
+
+.container
+{
+	display: grid;
+	grid-gap: 5px;
+	grid-template-areas:
+							'oo tt tt tt tt tt tt tt tt tt tt tt'
+							'ttt ttt ff ff ff ff ff ff ff ff ff ff'
+							'fff fff fff ss ss ss ss ss ss ss ss ss'
+							'sss sss sss sss ee ee ee ee ee ee ee ee'
+							'nn nn nn nn nn ttn ttn ttn ttn ttn ttn ttn'
+							'eel eel eel eel eel eel ttw ttw ttw ttw ttw ttw'
+							'ttr ttr ttr ttr ttr ttr ttr fft fft fft fft fft'
+							'fftt fftt fftt fftt fftt fftt fftt fftt sst sst sst sst'
+							'sv1 sv1 sv1 sv1 sv1 sv1 sv1 sv1 sv1 et1 et1 et1' 
+							'nt1 nt1 nt1 nt1 nt1 nt1 nt1 nt1 nt1 nt1 tw1 tw1'
+							'twe1 twe1 twe1 twe1 twe1 twe1 twe1 twe1 twe1 twe1 twe1 tt1'
+							
+}
+
+
+.container>div
+{
+	background-color: green;
+	padding: 20px;
+}

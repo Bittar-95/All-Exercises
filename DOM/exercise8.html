@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #8: Color picker</title>
+    <style>
+        #colors {
+            width: 576px;
+            height: 216px;
+            border: 1px solid black;
+
+
+    
+        }
+        #selected {
+            margin-top: 5px;
+            padding: 5px;
+            text-align: center;
+            width: 120px;
+            height: 1em;
+            border: 1px solid black;
+        }
+        .choice {
+            float:left;
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+            margin: 1px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="colors"></div>
+    <div id="selected"></div>
+
+
+
+        <script type="text/javascript">
+
+              var colors = [];
+               var text=document.getElementById('selected');
+
+            
+function initGrid() {
+    // collect colors in an array
+    //var  colors = [];
+    var range = ["00", "33", "66", "99", "cc", "ff"];
+
+    for (var r = 0; r < range.length; r++) {
+        for (var g = 0; g < range.length; g++) {
+            for (var b = 0; b < range.length; b++) {
+                colors.push("#" + range[r] + range[g] + range[b]);
+            }
+        }
+    }
+
+
+
+
+    var container = document.getElementById('colors');
+    var text=document.getElementById('selected');
+
+
+  
+        for (var i = 0; i < colors.length; i++) {
+      
+
+
+           
+            var division = document.createElement('div');
+            division.className='choice';
+ 
+            division.style.backgroundColor=colors[i];
+           
+           division.setAttribute('onclick','test('+"'"+colors[i]+"'"+')');
+           container.appendChild(division)
+
+
+
+           
+        }
+
+
+
+}
+
+function test(col) {
+     text.innerHTML=col;
+     text.style.backgroundColor=col;
+
+}
+
+window.onload = function () {
+    initGrid();
+}
+
+
+
+    </script>
+</body>
+</html>

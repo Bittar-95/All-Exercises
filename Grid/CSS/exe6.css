@@ -1,0 +1,129 @@
+.one
+{
+	grid-area: oo;
+}
+.two
+{
+	grid-area: tt;
+}
+.three
+{
+	grid-area: ttt;
+}
+.four
+{
+	grid-area: ff;
+}
+.five
+{
+	grid-area: fff;
+}
+.six
+{
+	grid-area: ss;
+}
+.seven
+{
+	grid-area: sss;
+}
+.eight
+{
+	grid-area: ee;
+}
+.nine
+{
+	grid-area: nn;
+}
+.ten
+{
+	grid-area: ttn;
+}
+
+.eleven
+{
+	grid-area: eel;
+}
+
+
+	.twelve
+	{
+		grid-area: ttw;
+	}
+	.therteen
+	{
+		grid-area: ttr;
+	}
+	.fourteen
+	{
+		grid-area: fft;
+
+	}
+	.fifteen 
+	{
+		grid-area: fftt;
+	}
+	
+	.sixteen
+		{
+			grid-area: sst;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.seventeen{grid-area: sv1;}
+	.eightteen{grid-area: et1;}
+	.ninteen{grid-area: nt1;}
+	.twenteen{grid-area: tw1;}
+	.twentione{grid-area: twe1;}
+	.twentytwo{grid-area: tt1;}
+	.twentythree{grid-area: ttt1;}
+	.twentyfour{grid-area: tf1;}
+	.twentyfive{grid-area: tff1;}
+	.twentysix{grid-area: ts1;}
+	.twentyseven{grid-area: tss1;}
+	.twentyeight{grid-area: te1;}
+
+
+
+
+
+.container
+{
+	display: grid;
+	grid-gap: 5px;
+	grid-template-areas:
+							'oo oo tt tt ff ff sss sss eel eel sv1 sv1'
+							'oo oo tt tt ff ff sss sss eel eel et1 et1'
+							'oo oo tt tt ff ff sss sss ttw ttw nt1 nt1'
+							'oo oo tt tt ff ff ee ee ttw ttw tw1 tw1'
+							'oo oo tt tt fff fff ee ee ttr ttr twe1 twe1'
+							'oo oo tt tt fff fff ee ee ttr ttr tt1 tt1'
+							'oo oo ttt ttt fff fff nn nn  fft fft ttt1 ttt1'
+							'oo oo ttt ttt fff fff nn nn fft fft tf1 tf1'
+							'oo oo ttt ttt ss ss nn nn fftt fftt tff1 tff1'
+							'oo oo ttt ttt ss ss ttn ttn fftt fftt ts1 ts1'
+							'oo oo ttt ttt ss ss ttn ttn sst sst tss1 tss1'
+							'oo oo ttt ttt ss ss ttn ttn sst sst te1 te1' 
+						
+
+
+}
+
+
+.container>div
+{
+	background-color: green;
+	padding: 20px;
+}

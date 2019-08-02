@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div>
+	<select onchange="chImage(value)">
+		<option disabled selected>--Select Image--</option>
+		<option value="https://searchengineland.com/figz/wp-content/seloads/2016/03/google-analytics-360e-1920-800x450.jpg">Images1</option>
+		<option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0KwTbeLw5Bsh0dunZ45SfHc9EQTp5__7NlToAFKsqixQNYl02">Img2</option>
+		<option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Gm895OGq2rfOrmB82GPV4AEtzfIa9JCUgrEKIKkvExr7Ldst">Img3</option>
+		<option value="https://cdn.cnn.com/cnnnext/dam/assets/190121090951-04-blood-moon-global-01212019-exlarge-169.jpg">Img4</option>
+	</select>
+</div>
+<div>
+	<img src="https://iisy.fi/wp-content/uploads/2018/08/user-profile-male-logo.jpg" width="200px" height="200px" id="img">
+</div>
+<script type="text/javascript">
+	var changeImages = document.getElementById('img');
+
+	function chImage(value) {
+
+		
+			changeImages.setAttribute('src',value);
+
+	
+	}
+
+		
+
+
+
+</script>
+
+</body>
+</html>

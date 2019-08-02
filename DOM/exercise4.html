@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #4: Formatting text</title>
+    <style>
+        div {
+            width: 600px;
+            height: 100px;
+            border: 1px solid black;
+            margin-top: 10px;
+            /* default options */
+            font-family: Arial;
+            font-size: 12pt;
+        }
+    </style>
+</head>
+<body>
+<form name="form">
+    <select name="font_family" id="font_family" onchange="fontTypeAndSize(value,'family')">
+        <option value="Arial" selected>Arial</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Helvetica">Helvetica</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Courier New">Courier New</option>
+    </select>
+    <select name="font_size" id="font_size" onchange="fontTypeAndSize(value,'size')">
+        <option value="8pt">8pt</option>
+        <option value="10pt">10pt</option>
+        <option value="12pt" selected>12pt</option>
+        <option value="14pt">14pt</option>
+        <option value="16pt">16pt</option>
+    </select>
+    <label>Italic <input type="checkbox" name="font_italic" id="font_italic" onchange="fontStyle('italic')"></label>
+    <label>Bold <input type="checkbox" name="font_bold" id="font_bold" onchange="fontStyle('bold')"></label>
+    <label>Underline <input type="checkbox" name="font_underline" id="font_underline" onchange="fontStyle('underline')"></label>
+</form>
+
+<div id="text">The quick brown fox jumps over the lazy dog</div>
+
+<script type="text/javascript">
+	var text = document.getElementById('text');
+	var bold = document.getElementById('font_bold');
+	var italic = document.getElementById('font_italic')
+	var underline = document.getElementById('font_underline');
+
+
+
+function fontStyle(argument) {
+	if (argument==='bold') 
+	{
+		if (bold.checked) {	
+		text.style.fontWeight='bold';
+	}
+	else{
+		text.style.fontWeight='normal';
+	}
+	}
+	else if(argument==='italic')
+	{	if (italic.checked) {
+		text.style.fontStyle = "italic";}
+		else
+		{
+			text.style.fontStyle = "normal";
+		}
+
+	}
+	else
+	{
+					if (underline.checked) {
+			text.style.textDecorationLine='underline';
+
+		}
+		else
+		{
+						text.style.textDecorationLine='none';
+
+		}
+
+	}
+	
+}
+
+function fontTypeAndSize(value,type) {
+	if (type==='family') 
+	{
+		text.style.fontFamily=value;
+
+	}
+		else
+		{
+			text.style.fontSize=value;
+
+		}
+
+}
+
+
+
+
+	
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #2: Changing colors</title>
+    <style>
+        #mydiv {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div id="mydiv" onclick="moDown()"></div>
+
+    <script>
+        	// document.getElementById('mydiv').style.backgroundColor='blue';
+        var colors=['green','yellow','blue','red','pink','purple','orange','black'];
+        var index = Math.floor( Math.random()*colors.length-1);
+        function moDown() {
+            if (index === colors.length-1){
+                document.getElementById('mydiv').style.backgroundColor=colors[index];
+                index =Math.floor( Math.random()*colors.length-1);
+            }
+            else{
+            document.getElementById('mydiv').style.backgroundColor=colors[index];
+            index++;
+            //  document.getElementById('mydiv').style.backgroundColor=colors[index];
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #5: Input check</title>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        .err {
+            color: red;
+            font-size: 0.7em;
+        }
+    </style>
+    <script>
+        /* TODO complete this part */
+    </script>
+</head>
+<body>
+
+<form name="pw">
+    <table>
+        <tr>
+            <td>Password (min 6 characters):</td>
+            <td><input type="password" name="password1" id="password1" size="10" placeholder="Password" oninput="checkPassword('pw1')"></td>
+            <td>
+                <div id="pw1_check" class="err"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>Repeat password:</td>
+            <td><input type="password" name="password2" id="password2" size="10" placeholder="Password" oninput="checkPassword('pw2')"></td>
+            <td>
+                <div id="pw2_check" class="err"></div>
+            </td>
+        </tr>
+    </table>
+
+    <input type="submit" value="Submit" id="submitBtn"/>
+</form>
+
+
+<script type="text/javascript">
+	var inputPassword = document.getElementById('password1');
+	var inputCheckPassword = document.getElementById('password2');
+    var btn = document.getElementById('submitBtn');
+
+btn.style.visibility='hidden';
+
+    var err=document.getElementById('pw1_check');
+
+   
+	
+
+	function checkPassword(x) {
+     var lengthpassword1=inputPassword.value.length;
+    var lengthpassword2=inputCheckPassword.value.length;
+
+    if (x==='pw1') 
+    {
+        if (lengthpassword1===0) 
+        {
+            err.innerHTML='';
+
+        }
+         else if (lengthpassword1<6) 
+        {
+            err.innerHTML='Password Is Too Short';
+        }
+    
+            else
+        {
+            err.innerHTML='Password Not Match';
+        }
+
+
+
+    }
+
+        else
+        {
+                if (inputPassword.value===inputCheckPassword.value) 
+        {
+             btn.style.visibility='visible'
+             err.innerHTML='';
+
+        }
+         else 
+        {
+            
+
+            err.innerHTML='Pawssword Does Not Match';
+             btn.style.visibility='hidden'
+
+        }
+    
+            
+
+
+
+
+        }
+      
+
+   
+
+
+		
+	}
+	
+
+
+</script>
+</body>
+</html>
+

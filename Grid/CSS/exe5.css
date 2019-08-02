@@ -1,0 +1,120 @@
+.one
+{
+	grid-area: oo;
+}
+.two
+{
+	grid-area: tt;
+}
+.three
+{
+	grid-area: ttt;
+}
+.four
+{
+	grid-area: ff;
+}
+.five
+{
+	grid-area: fff;
+}
+.six
+{
+	grid-area: ss;
+}
+.seven
+{
+	grid-area: sss;
+}
+.eight
+{
+	grid-area: ee;
+}
+.nine
+{
+	grid-area: nn;
+}
+.ten
+{
+	grid-area: ttn;
+}
+
+.eleven
+{
+	grid-area: eel;
+}
+
+
+	.twelve
+	{
+		grid-area: ttw;
+	}
+	.therteen
+	{
+		grid-area: ttr;
+	}
+	.fourteen
+	{
+		grid-area: fft;
+
+	}
+	.fifteen 
+	{
+		grid-area: fftt;
+	}
+	
+	.sixteen
+		{
+			grid-area: sst;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.seventeen{grid-area: sv1;}
+	.eightteen{grid-area: et1;}
+	.ninteen{grid-area: nt1;}
+	.twenteen{grid-area: tw1;}
+	.twentione{grid-area: twe1;}
+	.twentytwo{grid-area: tt1;}
+	.twentythree{grid-area: ttt1;}
+	.twentyfour{grid-area: tf1;}
+	.twentyfive{grid-area: tff1;}
+	.twentysix{grid-area: ts1;}
+	.twentyseven{grid-area: tss1;}
+	.twentyeight{grid-area: te1;}
+
+
+
+
+
+.container
+{
+	display: grid;
+	grid-gap: 5px;
+	grid-template-areas: 'oo oo oo oo oo oo oo oo oo oo oo oo' 
+						 'tt tt tt tt tt tt ttt ttt ttt ttt ttt ttt'
+						  'ff ff ff ff fff fff fff fff ss ss ss ss'
+						  'sss sss sss ee ee ee nn nn nn ttn ttn ttn'
+						  'eel eel ttw ttw  ttr ttr fft fft  fftt fftt sst sst'
+						  'sv1 et1 nt1 tw1 twe1 tt1 ttt1 tf1 tff1 ts1 tss1 te1';
+
+}
+
+
+.container>div
+{
+	background-color: orange;
+	padding: 20px;
+}
