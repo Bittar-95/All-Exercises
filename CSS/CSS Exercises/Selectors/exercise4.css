@@ -1,0 +1,71 @@
+
+body
+    {
+    	background-color: #F0F8FF;
+
+    }
+    body:nth-child(even) p
+    
+        color: purple;
+        background-color: yellow;
+    }
+    span
+    {
+    	background-color: yellow;
+    	font-weight: bold;
+    	padding-left: 0.5em;
+    	padding-right: 0.5ex; 
+    }
+    div
+    {
+    	width: 75%;
+    	border: 1px solid;
+        border-radius: 3px;
+    	border-color: #333333 ; 
+    	margin-top: 1em;
+    	padding: 0.5em;
+    	background-color: white;
+        box-shadow: 2px 1px 5px;
+
+
+    }
+
+    #alert
+    {
+    	border:dashed; border-color: red;color: red;
+    }
+
+    .ipsum
+    {
+    	
+    background-color: #FECB92;
+    padding-left: 1ex;
+    padding-right: 1ex;
+    }
+    .quis
+    {
+    	background-color: #fdfd96;
+    }
+
+    ul li ul
+    {
+        color: blue;
+    }
+    a
+    {
+        color: green;
+    }
+    ul li a
+    {
+        color: red;
+    }
+
+    ul li:first-child
+    {
+        font-weight: bold;
+    }
+    div:nth-child(2) a
+    {
+        color: purple;
+        background-color: yellow;
+    }

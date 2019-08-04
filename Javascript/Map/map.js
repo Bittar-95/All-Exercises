@@ -18,8 +18,7 @@ Instructions:
 */
 function doubleNumbers(arr){
   var result = arr.map(x=>x*2);
-  return result;
-
+return result;
 }
 
 /*
@@ -36,10 +35,9 @@ function doubleNumbers(arr){
 */
 
 function stringItUp(arr){
-	var results = arr.map(x=>x.toString());
-	return results;
- 
-
+  // your code here
+  var result=arr.map(x=>x.toString());
+  return result;
 
 
 }
@@ -59,9 +57,10 @@ function stringItUp(arr){
 */
 
 function capitalizeNames(arr){
-	var result = arr.map(x=>x.charAt(0).toUpperCase()+ x.slice(1));
-	return result;
   // your code here
+  var result = arr.map(x=>x= x[0].toUpperCase() + (x.slice(1,x.length)).toLowerCase());
+    
+  return result;
   
 }
 
@@ -101,6 +100,10 @@ function capitalizeNames(arr){
 
 function namesOnly(arr){
   // your code here
+
+  var result = arr.map(x=>x['name']);
+
+  return result;
 }
 /*
  * Exercise 5:  
@@ -144,6 +147,19 @@ function namesOnly(arr){
 
 function makeStrings(arr){
   // your code here
+
+  var result = arr.map(x=>
+    {
+      if(x['age']>=16)
+      {
+        return x['name'] + ' Can Go To The Matrix';
+      }
+      return x['name'] + ' Is Under Age';
+
+
+    });
+
+    return result;
 }
 
 /*
@@ -187,6 +203,8 @@ function makeStrings(arr){
 
 function readyToPutInTheDOM(arr){
   // your code here
+  var result =arr.map(x=>'<h1>'+x['name']+'</h1><h2>'+x['age']+'</h2>');
+  return result;
 }
 
 
@@ -207,6 +225,9 @@ function readyToPutInTheDOM(arr){
 
 function doubleValues(arr){
     // your code here
+    var result = arr.map(x=>x*2);
+    return result;
+
   }
   
   /*
@@ -225,6 +246,9 @@ function doubleValues(arr){
   
   function valTimesIndex(arr){
      // your code here   
+     var counter = -1;
+     var result = arr.map(x=>x*++counter);
+     return result;
     
   }
   
@@ -242,6 +266,8 @@ function doubleValues(arr){
   
   function extractKey(arr, key){
      // your code here 
+     var result = arr.map(x=>x[key]);
+     return result;
   }
   
   /*
@@ -249,9 +275,12 @@ function doubleValues(arr){
   * Write a function called extractFullName which accepts an array of objects and returns a new array with the value of the key with a name of "first" and the value of a key with the name of  "last" in each object, concatenated together with a space. 
   * 
   * Examples:
-  * extractFullName([{first: 'Elie', last:"Schoppik"}, {first: 'Tim', last:"Garcia"}, {first: 'Matt', last:"Lane"}, {first: 'Colt', last:"Steele"}]) // ['Elie Schoppik', 'Tim Garcia', 'Matt Lane', 'Colt Steele']
+  * extractFullName([{first: 'Elie', last:"Schoppik"}, {first: 'Tim', last:"Garcia"}, {first: 'Matt', last:"Lane"}, {first: 'Colt', last:"Steele"}])
+  *  // ['Elie Schoppik', 'Tim Garcia', 'Matt Lane', 'Colt Steele']
   */
   
- function extractFullName(){
+ function extractFullName(arr){
     // your code here 
+    var result = arr.map(x=>x['first'] +' '+x['last'] );
+    return result;
  }
